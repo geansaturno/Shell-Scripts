@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+origem=""
+destino="/media/cronosnaeg/GSGONCALVES/"
+cp $origem $destino

@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+#Autor: Gean Saturno Gonçalves
+#Email: geansaturno@gmail.com
+#Data: 02/07/15
+
+case $1 in
+
+	stop) 
+		transmission-gtk -m &
+		dropbox start &
+		
+		sleep 10
+		clear
+		
+		echo "| Modo jogo finalizado"
+		
+		exit
+esac
+	
+
+
+#Desliga a outra tela
+#screen-layout-nomral
+
+#fecha os aplicativos desnecessários
+killprocs
+
+
+#Limpa a tela
+clear

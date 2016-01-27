@@ -1,0 +1,14 @@
+#!/usr/bin/env python
+# coding=utf-8
+
+"""
+Autor:  Gean Saturno Gonçalves
+Email:  geansaturno@gmail.com
+Data:   04/09/15
+
+Script para calcular o total de horas
+
+Exemplo de script em Python
+"""
+
+return 50

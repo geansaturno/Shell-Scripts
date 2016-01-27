@@ -1,0 +1,23 @@
+#!/bin/bash
+
+#Autor: Gean Saturno Gonçalves
+#Email: geansaturno@gmail.com
+#Data: 02/07/15
+
+#Variavel de aplicativos
+aplicativos=(
+"xfce4-terminal"
+#"gnome-terminal"
+"steam -silent"
+"transmission-gtk -m"
+"dropbox start"
+#"quiterss"
+)
+
+# Mostra a quantidade de aplicativos
+#echo ${#aplicativos[@]}
+
+for (( i = 0; i < ${#aplicativos[@]}; i++ )); do
+  sleep 10
+  ${aplicativos[$i]} &
+done

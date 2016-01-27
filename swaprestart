@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#Autor: Gean Saturno Gonçalves
+#Email: geansaturno@gmail.com
+#Data: 02/07/15
+
+echo fechando swap
+sudo swapoff -a
+
+echo abrindo swap
+sudo swapon -a
+
+clear
+
+echo "| swap reiniciada"

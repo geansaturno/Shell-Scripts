@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#recebe como parametro o tempo de print
+
+delay=$1
+
+echo "Delay entre fotos: $delay"
+
+while true
+do
+	nomeDoArquivo=$(date +%d-%m-%Y:%H:%M:%s.jpg)
+	gnome-screenshot -f Captura\ de\ tela\ $nomeDoArquivo -d $delay
+	echo "Captura\ de\ tela\ $nomeDoArquivo salvo em $(pwd)"
+done

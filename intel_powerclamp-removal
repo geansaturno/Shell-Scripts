@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+#Kernels
+caminho="/lib/modules/"
+cd $(echo $caminho)
+
+#Ultimo kernel geralmente é o que está em uso.
+kernel=$(ls | tail -n 1)
+
+caminho=$(echo $caminho$kernel"/kernel/drivers/thermal")
+
+cd $(echo $caminho)
+
+sudo modprobe -r intel_powerclamp
+sudo mv intel_powerclamp.ko intel_powerclamp.ko.off
+
+ls
