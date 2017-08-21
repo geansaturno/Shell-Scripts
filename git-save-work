@@ -1,0 +1,2 @@
+[alias]
+  save-work = !git add -A && msg=$(date '+work-%d/%b/%y-%H:%M') && git commit -m "$msg" && git pull -r && git push
